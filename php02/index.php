@@ -35,7 +35,7 @@
 //1.  DB接続します
 try {
   //Password:MAMP='root',XAMPP=''
-  new PDO('mysql:dbname=msseuoni_mss_db;charset=utf8;host=mysql57.msseuoni.sakura.ne.jp','msseuoni','11395029iS');
+  $pdo = new PDO('mysql:dbname=msseuoni_mss_db;charset=utf8;host=mysql57.msseuoni.sakura.ne.jp','msseuoni','11395029iS');
 } catch (PDOException $e) {
   exit('DB Connection Error'.$e->getMessage());
 }
@@ -71,7 +71,6 @@ if($status==false) {
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ブックマーク登録アプリ</title>
 <link rel="stylesheet" href="css/range.css">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <style>div{padding: 10px;font-size:16px;}</style>
