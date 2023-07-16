@@ -2,7 +2,7 @@
 //1.  DB接続します
 try {
   //Password:MAMP='root',XAMPP=''
-  $pdo = new PDO('mysql:dbname=msseuoni_mss_db;charset=utf8;host=mysql57.msseuoni.sakura.ne.jp,msseuoni,11395029iS');
+  $pdo = new PDO('mysql:dbname=msseuoni_mss_db;charset=utf8;host=mysql57.msseuoni.sakura.ne.jp','msseuoni','11395029iS');
 } catch (PDOException $e) {
   exit('DB Connection Error'.$e->getMessage());
 }
